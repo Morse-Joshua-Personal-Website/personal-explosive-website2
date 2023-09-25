@@ -2,6 +2,7 @@
     box-sizing: border-box;
   }
   
+  /* Font */
   body {
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -37,7 +38,7 @@
   /* Style the list inside the menu */
   nav ul {
       list-style-type: none;
-  /* Added junk */
+  /* Additional styling */
       margin: 0;
       padding: 0px;
       background-color: #f1f1f1;
@@ -47,7 +48,7 @@
       border: 2px solid #555;
   }
   
-  /* Added junk */
+  /* Added nav */
   nav li {
       display: block; 
       text-align: center;
@@ -61,9 +62,9 @@
       text-decoration: none;
   }
   
-  /*Nav menu active and inactive color coding/styling*/
+  /* Nav menu active and inactive color coding/styling */
   li a.active {
-      background-color: #04aa6d;
+      background-color: #f34079;
       color: #f1f1f1;
   }
   
@@ -94,7 +95,7 @@
     border: 1px solid #555;
   }
   
-  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  /* Responsive layout */
   @media (max-width: 600px) {
     section {
       -webkit-flex-direction: column;
@@ -102,10 +103,12 @@
     }
   }
   
+  /* Paragraph text alignment */
   p {
       align-content: center;
   }
   
+  /* Button styling */
   button {
       align-content: center;
   }
@@ -134,6 +137,7 @@
       justify-content: center;
   }
 
+  /* Js styling on Portfolio Page */
 #hello {
     font-style: italic;
     color:#f34079
@@ -142,4 +146,37 @@
 #demo {
     font-style: italic;
     color:rgb(76, 0, 255)
+}
+
+/* Style for contact page by "text", "email" "textarea" inputs. May need to split this out to a different css if I get more text fields besides contact page. */
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+/* Contact page form background and padding */
+.concontact {
+  border-radius: 2px;
+  background-color: #f1f1f1;
+  padding: 2px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #f34079;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Dynamic button color effect. */
+input[type=submit]:hover {
+  background-color: #fc894d;
 }
