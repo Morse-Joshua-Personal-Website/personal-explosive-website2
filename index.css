@@ -15,6 +15,7 @@
     font-size: 35px;
     color: white;
     border: 1px solid #555;
+    /* background-image: url("pictop.png"); Commented out, still working on */
   }
   
   /* Container for flexboxes */
@@ -93,6 +94,7 @@
     text-align: center;
     color: white;
     border: 1px solid #555;
+    /* background-image: url("picbottom.png"); Commented out, still working on */
   }
   
   /* Responsive layout */
@@ -103,7 +105,7 @@
     }
   }
   
-  /* Paragraph text alignment */
+  /* Paragraph text alignment, may need to assign classes if need arises */
   p {
       align-content: center;
   }
@@ -118,9 +120,9 @@
       height: 5ex;
       background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
       border: none;
-      border-radius: 5px;
       font-weight: bold;
       color: white;
+      border-radius: 4px;
       cursor: pointer;
     }
   .joinBtn:active {
@@ -155,6 +157,7 @@ input[type=text], input[type=email], textarea {
   border: 1px solid #555;
   box-sizing: border-box;
   margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 16px;
   resize: vertical
 }
@@ -170,9 +173,9 @@ input[type=text], input[type=email], textarea {
 input[type=submit] {
   background-color: #f34079;
   color: white;
-  padding: 12px 20px;
-  border: none;
+  padding: 10px 18px;
   border-radius: 4px;
+  border: none;
   cursor: pointer;
 }
 
